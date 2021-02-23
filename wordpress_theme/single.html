@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Link para descargar el tipo de fuente desde Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <div id="logo"><p>My Blog</p><span>by Diego Carneiro</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Página de ejemplo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>        
+        <section id="articles_list">
+            <h2 id="cat_name">Nombre de la Categoría</h2>
+            <article>
+                <hgroup><h2><a href="#">Título de nuestro artículo</a></h2></hgroup>
+                <p class="date">28 de Diciembre de 2020 en <a href="#">Categoría 1</a></p>
+                <p class="extract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ex odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec at nisi eleifend, porttitor leo quis, vehicula mi. Pellentesque vitae lacus neque. Vestibulum vitae sollicitudin magna, a finibus magna. Pellentesque finibus viverra turpis ut accumsan. Cras convallis mi quis sapien mollis, quis scelerisque diam facilisis. Aenean eleifend enim ut lorem congue convallis. Praesent sed mauris justo. Donec quis nibh nulla.
+                    <br><br>
+                    <img src="https://picsum.photos/500/300"/>
+                    <br><br>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ex odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec at nisi eleifend, porttitor leo quis, vehicula mi. Pellentesque vitae lacus neque. Vestibulum vitae sollicitudin magna, a finibus magna. Pellentesque finibus viverra turpis ut accumsan. Cras convallis mi quis sapien mollis, quis scelerisque diam facilisis. Aenean eleifend enim ut lorem congue convallis. Praesent sed mauris justo. Donec quis nibh nulla. 
+                </p>                        
+            </article> 
+            <section id="commentarios">
+                <h3>Comentarios</h3>
+                <div id="caja_comentarios"></div>
+            </section>           
+            <div id="pagination">
+                <p><a href="#"><- Post Siguientes</a>
+                <a href="#">Post Anteriores -></a></p>
+            </div>
+        </section>
+        <aside>
+            <section class="widget">
+                <h3>Widget</h3>
+                <ul>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                </ul>
+            </section>
+            <section class="widget">
+                <h3>Widget</h3>
+                <ul>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <section id="ft_widgets"><!--Esta zona es para agregar contenido dinámico desde Wordpress-->
+            <section class="widget">
+                <h3>Widget #1</h3>
+                <ul>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                </ul>
+            </section>
+            <section class="widget">
+                <h3>Widget #2</h3>
+                <ul>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                    <li><a href="#">Loren Ipsum</a></li>
+                </ul>
+            </section>
+        </section>
+        <p id="copyright">My blog Copyright @ 2020</p>
+    </footer>
+</body>
+</html>
