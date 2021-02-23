@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pushbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet"> 
+    <title>Nurideas</title>
+</head>
+<body>
+    
+    <header>
+        <div class="contenedor">
+            <a class="logo" href="#"><img src="img/Logo.png" alt="Logo de la compañia"></a>            
+            <nav>
+                <a href="#">Quienes somos</a>
+                <a href="#">Suscríbete</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </nav>
+        </div>        
+    </header>
+    <main>
+        <div class="contenedor">
+            <button role="button" data-pushbar-target="pushbar-filtro" class="boton">Filtros...</button>    
+            <div class="articulo">
+                <div class="producto">
+                    <div class="descripcion">
+                        <h2>Nombre del producto</h2>
+                        <p class="datos">Quedan sólo 5 uds.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum rhoncus blandit. Integer pretium orci orci, et vestibulum eros rutrum id. Aenean hendrerit enim magna, a rutrum velit eleifend ac. Quisque eget dolor placerat, lacinia augue eu, cursus ante. Fusce ut mauris eu erat volutpat ultricies a non leo. Sed eleifend arcu eu ullamcorper pretium. Fusce id pellentesque nunc. Vestibulum tellus elit, vestibulum in ante a, fringilla egestas dolor. Morbi a vehicula lacus. Sed hendrerit odio sed ex tincidunt consequat. </p>
+                        <p class="datos" id="fecha">11/02/2021</p>                    
+                    </div>
+                    <div class="comprar">
+                        <div class="imagen"></div>
+                        <div class="datos-compra">
+                            <p>2,50€</p>
+                            <button role="button" class="boton">Comprar</button> 
+                        </div>                                       
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="articulo">
+                <div class="producto">
+                    <div class="descripcion">
+                        <h2>Nombre del producto</h2>
+                        <p class="datos">Quedan sólo 5 uds.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum rhoncus blandit. Integer pretium orci orci, et vestibulum eros rutrum id. Aenean hendrerit enim magna, a rutrum velit eleifend ac. Quisque eget dolor placerat, lacinia augue eu, cursus ante. Fusce ut mauris eu erat volutpat ultricies a non leo. Sed eleifend arcu eu ullamcorper pretium. Fusce id pellentesque nunc. Vestibulum tellus elit, vestibulum in ante a, fringilla egestas dolor. Morbi a vehicula lacus. Sed hendrerit odio sed ex tincidunt consequat. </p>
+                        <p class="datos" id="fecha">11/02/2021</p>                    
+                    </div>
+                    <div class="comprar">
+                        <div class="imagen"></div>
+                        <div class="datos-compra">
+                            <p>2,50€</p>
+                            <button role="button" class="boton">Comprar</button> 
+                        </div>                                       
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="articulo">
+                <div class="producto">
+                    <div class="descripcion">
+                        <h2>Nombre del producto</h2>
+                        <p class="datos">Quedan sólo 5 uds.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum rhoncus blandit. Integer pretium orci orci, et vestibulum eros rutrum id. Aenean hendrerit enim magna, a rutrum velit eleifend ac. Quisque eget dolor placerat, lacinia augue eu, cursus ante. Fusce ut mauris eu erat volutpat ultricies a non leo. Sed eleifend arcu eu ullamcorper pretium. Fusce id pellentesque nunc. Vestibulum tellus elit, vestibulum in ante a, fringilla egestas dolor. Morbi a vehicula lacus. Sed hendrerit odio sed ex tincidunt consequat. </p>
+                        <p class="datos" id="fecha">11/02/2021</p>                    
+                    </div>
+                    <div class="comprar">
+                        <div class="imagen"></div>
+                        <div class="datos-compra">
+                            <p>2,50€</p>
+                            <button role="button" class="boton">Comprar</button> 
+                        </div>                                       
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <div class="superior">
+                <div class="enlaces">
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li><a href="#">nurideas@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="enlaces">
+                    <h2>Redes Sociales</h2>
+                    <ul>
+                        <li><a href="#">www.facebook.com</a></li>
+                        <li><a href="#">www.instagram.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inferior">
+                <p>© Diego Carneiro</p>
+            </div>
+        </div>        
+    </footer>
+
+    <!--Pushbar-->
+    <div data-pushbar-id="pushbar-filtro" data-pushbar-direction="right" class="pushbar pushbar-filtro">
+        <div class="titulo">
+            <h2>Filtrar resultados</h2>
+            <button data-pushbar-close><i class="fas fa-angle-right"></i></button>
+        </div>
+        <form action="" class="opciones">
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox-comestibles" id="checkbox-comestibles">
+                <label for="checkbox-comestibles">Mostrar productos comestibles</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox-no-comestibles" id="checkbox-no-comestibles">
+                <label for="checkbox-no-comestibles">Mostrar productos no comestibles</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox-no-disponibles" id="checkbox-no-disponibles">
+                <label for="checkbox-no-disponibles">Mostrar también productos NO disponibles</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox-rango" id="checkbox-rango">
+                <label for="checkbox-rango">Seleccionar un rango de precios</label>                
+            </div>   
+            <p id="rango">Desde <input type="text" id="imput-desde">€ hasta <input type="text" id="imput-hasta">€</p>
+        </form>          
+    </div>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pushbar.js"></script>
+	<script>
+		var pushbar = new Pushbar({
+			blur:true,
+			overlay:true
+		});
+	</script>
+</body>
+</html>

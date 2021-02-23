@@ -1,0 +1,315 @@
+/*
+Theme Name: Nurideas
+Theme URI: www.miweb.com
+Description: Descripcion del tema
+Version: 1
+Author: NeiNess
+Author URL: www.miweb.com
+*/
+
+:root{
+    --primary-dark: #c248ff;
+    --primary: #e1a5ff;
+    --gray:#787878;
+    --background: #c3fafe;
+    --background-body: #fffffd;    
+    --tittle-font:'Courgette', cursive;
+    --text-font:'Lato', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    background: var(--background);
+    font-size: 21px; 
+}
+
+.contenedor{
+    width: 70%;
+    margin: auto;
+}
+
+/*--Header--*/
+header{
+      
+    font-family: var(--tittle-font);
+    font-weight: normal;
+    color: var(--primary);
+    font-size: 2em;
+}
+
+header .contenedor{
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+header .logo{
+    padding-top: 1.3%;
+    position: absolute;
+}
+
+header .logo img{
+    width: 6em;
+}
+
+header .logo:hover{
+    transform: scale(1.2);
+    transform-origin:center;
+}
+
+header nav{
+    padding-top: 10.4%; 
+    text-align: right;
+}
+
+header nav a{
+    color: var(--primary);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color:var(--primary-dark);
+}
+
+/*--Main--*/
+main .contenedor{     
+    background: var(--background-body);
+    border-radius: 50px;
+    padding: 3% 6%;
+}
+
+main .boton{
+    background: var(--primary);
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    min-width: 7em;
+    min-height: 1.5em;
+    font-size: 1.2em;
+    font-family: var(--tittle-font);    
+    float: right;
+    cursor: pointer;
+}
+
+main .boton:hover{
+    background: var(--primary-dark);
+}
+
+/*Producto*/
+main .producto{
+    display: flex;
+    align-items: start;
+    margin-top: 4.7em;    
+    font-family: var(--text-font);
+    color: var(--gray);
+    line-height: 1.19em;
+}
+
+main .producto .descripcion{
+    width: 50%;
+    height: 90%;    
+    display:flex;
+    flex-direction: column;
+    margin-right: 6%;
+}
+
+main .producto .descripcion h2{
+    font-family: var(--tittle-font);
+    color: var(--primary);
+}
+
+main .producto .descripcion .datos{
+    font-style:italic;
+    font-weight: bold;
+    text-align: right;
+    padding: 0.5em;
+}
+
+main .producto .comprar{
+    width: 50%;
+    height: 90%;
+}
+
+main .producto .comprar .imagen{
+    height: 21em;
+    width: 100%;
+    border-radius: 90px;
+    background:url('img/Mermelada.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+main .producto .comprar .datos-compra{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+}
+
+main .producto .comprar .datos-compra p{
+    font-style:italic;
+    font-weight: bold;
+}
+
+main hr{
+    margin-top: 5em;
+    color: var(--primary);
+    border: solid 2px;
+}
+
+/*Footer*/
+footer{
+    position:relative;
+    bottom: 7vh;
+}
+
+footer .contenedor .superior{
+    padding: 3% 6%;
+    background: var(--primary);
+    min-height: 9.5em;
+    display:flex;
+    justify-content: space-between;
+}
+
+footer .contenedor .superior h2{
+    color: white;
+    font-family: var(--tittle-font);    
+}
+
+footer .contenedor .superior .enlaces{
+    font-family: var(--text-font);
+}
+
+footer .contenedor .superior .enlaces li{
+    list-style: none;
+    line-height: 1.75em;
+}
+
+footer .contenedor .superior .enlaces li a{
+    color: var(--gray);
+    text-decoration: none;
+}
+
+footer .contenedor .superior .enlaces li a:hover{
+    color: white;
+}
+
+footer .contenedor .inferior{
+    padding-right:3%;
+    background: var(--primary-dark);
+    min-height: 50px;
+    color: var(--background);
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+/*Pushbar*/
+.pushbar{
+	background: var(--primary);
+	color: var(--gray);
+    margin-top: 10.4%;
+    min-width: 32.5%;
+    opacity: 80%;
+    border-radius: 50px 0 0 50px;
+    padding-left: 3.5em;
+    padding-top: 1.5em;
+    padding-right: 1em;
+}
+
+.pushbar .titulo{
+	display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+}
+
+.pushbar .titulo h2{
+    color: white;
+    font-family: var(--tittle-font);
+    font-size: 2em;
+}
+
+.pushbar .titulo button{
+	background: none;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 2.3em;
+}
+
+.pushbar .opciones{
+    padding-top: 2em;
+    font-family: var(--text-font);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column; 
+}
+/*Checkbox*/
+.pushbar .opciones .checkbox{ 
+    margin-bottom: 2em;
+}
+
+.pushbar .opciones .checkbox input[type="checkbox"]{
+    display: none;
+}
+
+.pushbar .opciones .checkbox label{
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.pushbar .opciones .checkbox label:hover{
+    color:white;
+    border-radius: 25px;
+}
+
+.pushbar .opciones .checkbox label:before{
+    content: "";
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background: none;
+    border: 3px solid var(--gray);
+    border-radius: 2px;
+    position: absolute;
+    left: .8em;
+    top: .25em;
+}
+
+.pushbar .opciones .checkbox input[type="checkbox"]:checked + label:before{
+    color: var(--primary-dark);
+    font-family: 'Font Awesome 5 Free';
+    content: '\f00c';    
+}
+
+/*text*/
+.pushbar .opciones p input[type="number"]{
+    display: none;
+}
+
+/*Media Queries*/
+@media screen and (max-width:800px){
+
+    body{
+        font-size: 14px;
+    }
+
+    .contenedor{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:400px){
+    
+}
