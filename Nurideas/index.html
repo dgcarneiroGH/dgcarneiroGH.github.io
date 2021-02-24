@@ -28,7 +28,7 @@
             <div class="articulo">
                 <div class="producto">
                     <div class="descripcion">
-                        <h2>Producto</h2>
+                        <h2>Nombre del producto</h2>
                         <p class="datos">Quedan sólo 5 uds.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum rhoncus blandit. Integer pretium orci orci, et vestibulum eros rutrum id. Aenean hendrerit enim magna, a rutrum velit eleifend ac. Quisque eget dolor placerat, lacinia augue eu, cursus ante. Fusce ut mauris eu erat volutpat ultricies a non leo. Sed eleifend arcu eu ullamcorper pretium. Fusce id pellentesque nunc. Vestibulum tellus elit, vestibulum in ante a, fringilla egestas dolor. Morbi a vehicula lacus. Sed hendrerit odio sed ex tincidunt consequat. </p>
                         <p class="datos" id="fecha">11/02/2021</p>                    
@@ -110,24 +110,34 @@
             <h2>Filtrar resultados</h2>
             <button data-pushbar-close><i class="fas fa-angle-right"></i></button>
         </div>
-        <form action="" class="opciones">
-            <div class="checkbox">
+        <form action="" class="formulario">
+            <div class="formulario__checkbox">
                 <input type="checkbox" name="checkbox-comestibles" id="checkbox-comestibles">
                 <label for="checkbox-comestibles">Mostrar productos comestibles</label>
             </div>
-            <div class="checkbox">
+            <div class="formulario__checkbox">
                 <input type="checkbox" name="checkbox-no-comestibles" id="checkbox-no-comestibles">
                 <label for="checkbox-no-comestibles">Mostrar productos no comestibles</label>
             </div>
-            <div class="checkbox">
+            <div class="formulario__checkbox">
                 <input type="checkbox" name="checkbox-no-disponibles" id="checkbox-no-disponibles">
                 <label for="checkbox-no-disponibles">Mostrar también productos NO disponibles</label>
             </div>
-            <div class="checkbox">
-                <input type="checkbox" name="checkbox-rango" id="checkbox-rango">
-                <label for="checkbox-rango">Seleccionar un rango de precios</label>                
-            </div>   
-            <p id="rango">Desde <input type="text" id="imput-desde">€ hasta <input type="text" id="imput-hasta">€</p>
+            
+            <div class="formulario__rango">
+                <div class="formulario__checkbox">
+                    <input type="checkbox" name="checkbox-rango" id="checkbox-rango">
+                    <label for="checkbox-rango">Seleccionar un rango de precios</label>                
+                </div>       
+
+                Desde <div class="formulario__rango-input">
+                    <input type="number" class="formulario__number" id="imput-desde" value="0" max="99" min="0">
+                    <p class="formulario__number-moneda">€</p>
+                </div> hasta <div class="formulario__rango-input">
+                    <input type="number" class="formulario__number" id="imput-hasta" value="0" max="99" min="0">
+                    <p class="formulario__number-moneda">€</p>
+                </div>
+            </div>
         </form>          
     </div>
 

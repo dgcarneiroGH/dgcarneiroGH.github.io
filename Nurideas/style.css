@@ -242,7 +242,7 @@ footer .contenedor .inferior{
 	font-size: 2.3em;
 }
 
-.pushbar .opciones{
+.pushbar .formulario{
     padding-top: 2em;
     font-family: var(--text-font);
     font-weight: bold;
@@ -250,31 +250,28 @@ footer .contenedor .inferior{
     flex-direction: column; 
 }
 /*Checkbox*/
-.pushbar .opciones .checkbox{ 
+.formulario__checkbox{ 
     margin-bottom: 2em;
 }
 
-.pushbar .opciones .checkbox input[type="checkbox"]{
+.formulario__checkbox input[type="checkbox"]{
     display: none;
 }
 
-.pushbar .opciones .checkbox label{
+.formulario__checkbox label{
     padding: 5px 15px 5px 51px;
     display: inline-block;
     position: relative;
     border-radius: 3px;
     cursor: pointer;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
 
-.pushbar .opciones .checkbox label:hover{
+.formulario__checkbox label:hover{
     color:white;
     border-radius: 25px;
 }
 
-.pushbar .opciones .checkbox label:before{
+.formulario__checkbox label:before{
     content: "";
     width: 1em;
     height: 1em;
@@ -287,15 +284,53 @@ footer .contenedor .inferior{
     top: .25em;
 }
 
-.pushbar .opciones .checkbox input[type="checkbox"]:checked + label:before{
+.formulario__checkbox input[type="checkbox"]:checked + label:before{
     color: var(--primary-dark);
     font-family: 'Font Awesome 5 Free';
     content: '\f00c';    
 }
 
 /*text*/
-.pushbar .opciones p input[type="number"]{
-    display: none;
+.formulario__rango .formulario__checkbox{
+    margin-bottom: 0;
+}
+
+.formulario__rango .formulario__rango-input{
+    display: inline;
+    position:relative;
+}
+
+.formulario__rango-input input[type="number"]{
+    width: 4em;
+    height: 2em;
+    font-size: 1em; 
+    font-family: var(--text-font);
+    color: var(--gray);
+    margin: 0 10px;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--gray);
+    outline: none;
+    -moz-appearance: textfield; 
+}
+
+.formulario__rango-input input[type="number"]:hover{
+    color: white;
+    border-bottom-color: white;
+    cursor: pointer;
+}
+
+.formulario__rango-input input[type="number"]:hover + .formulario__number-moneda{
+    color: white;
+}
+
+.formulario__number-moneda{
+	position:absolute;
+	right: 1em;
+	bottom: 0;
+	z-index: 100;
+	/*opacity: 0;*/
 }
 
 /*Media Queries*/
